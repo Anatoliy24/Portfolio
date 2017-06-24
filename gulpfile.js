@@ -28,8 +28,9 @@ gulp.task('build', ['pug', 'sass', 'scripts', 'assets']);
 gulp.task('watch', function() {
   gulp.watch('./src/html/pages/**/*.scss', ['sass']); //стили
   gulp.watch('./src/html/pages/**/*.js', ['scripts']); //скрипты
-  gulp.watch(['./src/html/pages/**/*.pug'], ['pug']); // html
+  gulp.watch(['./src/html/pages/**/*.pug'], ['pug']); // pug
   gulp.watch('./src/assets/**/*.*', ['assets']); //наши локальные файлы(картинки, шрифты)
+  // gulp.watch('./src/_components/**/*.*'); //наши локальные файлы(картинки, шрифты)
   gulp.watch('./src/**/*.*').on('change', browserSync.reload); //Перезапуск browserSynс
 });
 

@@ -2,12 +2,12 @@
 Error: File to import not found or unreadable: normalize.
         on line 1 of about.scss
 
-1: @import "normalize";
+1: @import 'normalize';
 2: 
 3: 
-4: 
-5: 
-6: 
+4: .header {
+5:   background: url('../../../assets/img/header/header_bg.jpg') no-repeat center center fixed;
+6:   min-height:650px;
 
 Backtrace:
 about.scss:1
@@ -53,4 +53,4 @@ c:/Ruby23-x64/bin/scss:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: normalize.\A         on line 1 of about.scss\A \A 1: @import \"normalize\";\A 2: \A 3: \A 4: \A 5: \A 6: "; }
+  content: "Error: File to import not found or unreadable: normalize.\A         on line 1 of about.scss\A \A 1: @import 'normalize';\A 2: \A 3: \A 4: .header {\A 5:   background: url('../../../assets/img/header/header_bg.jpg') no-repeat center center fixed;\A 6:   min-height:650px;"; }

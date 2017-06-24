@@ -1,14 +1,47 @@
-@import "normalize";
-
 
 
 
 
 .header {
-   background: url('../../../assets/img/header/header_bg.jpg');
-
+  background: url('../../../assets/img/header/header_bg.jpg') no-repeat;
+  min-height:650px;
+  position: relative;
 }
 
-div{
-  color: #ffffff;
+.header__profile{
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+}
+
+.header__photo {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  width: 142px;
+  margin-left: -(142/2) + px ;
+  margin-top: -(142/2) + px ;
+  z-index: 1;
+}
+
+.header__desc{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin-left: -(200/2) + px ;
+}
+
+.header__stars{
+  position: absolute;
+  width: 463px;
+  height: 273px;
+  top: 50%;
+  left: 0;
+  margin-left: -(463/2) + px ;
+  margin-top: -(273/2) + px ;
+}
+
+.header__hamburger{
+
 }
