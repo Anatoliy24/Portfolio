@@ -6,7 +6,7 @@
 .header__profile {
   position: absolute;
   width: 400px;
-  top: 50%;
+  top: 35%;
   left: 50%; }
 
 .header__photo {
@@ -18,9 +18,9 @@
   margin-top: -71px;
   z-index: 1; }
 
-.header_desc {
+.header__desc {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   margin-left: -100px; }
 
@@ -32,3 +32,35 @@
   left: 0;
   margin-left: -231.5px;
   margin-top: -136.5px; }
+
+.header__hamburger {
+  position: absolute;
+  background: url("../../../assets/img/header/header_hamburger.png") no-repeat;
+  width: 40px;
+  height: 35px;
+  top: 0;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 24px; }
+
+.header .social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px; }
+
+.social__list {
+  list-style: none; }
+
+.social__item {
+  float: left;
+  text-decoration: none; }
+
+.social__link {
+  color: #ffffff; }
+  .social__link:hover {
+    text-decoration: none;
+    color: #004cd1; }
+
+.social__link_header-white {
+  color: #ffffff; }
