@@ -14,34 +14,74 @@ html(lang='ru')
   body
     wrapper
       container
-        header
+        include ../_components/header
+        include ../_components/triangle
+        main
           .container
             .row
-              .col-md-12
-                .header
-                  //img.img-responsive(alt ='background' src='../../../assets/img/header/header_bg.jpg')
-                  .header__profile
-                    img.header__photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
-                    .header__desc
-                      .header__name Владимир Астахов
-                      .header__info Личный сайт веб-разработчика
-                    img.header__stars.img-responsive(alt="stars", src='../../../assets/img/header/header_stars.png' )
-                  .header__hamburger
-                  .social
-                    ul.social__list
-                      li.social__item
-                        a(href="https://www.yandex.ru/" target="_blank").social__link.social__link_header-white.icon-vk
-                      li.social__item
-                        a(href="#").social__link.social__link_header-white.icon-git
-                      li.social__item
-                        a(href="#").social__link.social__link_header-white.icon-link
-                  .header__arrow
-        section__triangle
-          .container
-            .row
-              .col-md-12
-                .section__triangle-bg_left
-                .section__triangle-bg_right
+              .col-md-6
+                .about__left
+                  .about__left-header Обо мне
+                    img.about__left-img.img-responsive(alt="stars2", src='../../../assets/img/section_about/about_stars.png' )
+                  .about__left-photo
+                    img.img-responsive(alt='photo' src='../../../assets/img/section_about/about_photo.jpg')
+                  .about__left-desc
+                    .about__font-header Кто я
+                    .about__header-line
+                    .about__left-desc-text
+                      p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
+                        |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
+              .col-md-6
+                .about__right
+                  .about__right-header
+                    .about__font-header Чем я могу быть вам полезен
+                    .about__header-line
+                  .about__right-desc-text
+                    p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
+                      |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
+                  .about__right-skills
+                    .about__right-skills_frontend.skills__margin-top
+                      .skills__header Frontend
+                        ul.skills__list
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                    .about__right-skills_backend.skills__margin-top
+                      .skills__header Backend
+                        ul.skills__list
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                    .about__right-skills_workflow.skills__margin-top
+                      .skills__header Workflow
+                        ul.skills__list
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+                          li.skills__list-item
+                            include ../_components/skills
+                            span.skills__name HTML5
+        div Lorem ipsum orci malegitsuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
+            | Lorem lectus orci gravida molestie proin metus porta mattis maecenas — proin arcu leo orci proin sit. Congue molestie et nec arcu — nibh eu mauris justo auctor molestie integer arcu congue ultricies sodales in vivamus cursus sodales sem. Mauris — diam nam nec morbi: elementum nam pharetra lorem vulputate sodales quam: amet nam bibendum ut duis proin morbi. Non arcu tellus integer, amet fusce quam mattis ultricies pharetra. Nulla sem quisque mauris fusce tempus arcu orci quisque pellentesque sem mauris diam, non cursus risus porta vulputate malesuada. Donec nec vitae: porttitor bibendum, mauris, leo sem rutrum integer, pellentesque donec cursus urna congue sed enim arcu et leo — vitae odio.
+            |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
 
 
 
