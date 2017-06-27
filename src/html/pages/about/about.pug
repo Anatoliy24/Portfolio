@@ -2,12 +2,10 @@
 head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-  meta(name='viewport' content='width=device-width')
-  //link(href="/dist/css/main.css" rel="stylesheet")
+  meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
   link(href="../../../css/pages/about/about.css" rel="stylesheet")
   link(href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet")
   link(href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet")
-  //link(href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet")
   title Обо мне
 doctype html
 html(lang='ru')
@@ -27,15 +25,15 @@ html(lang='ru')
                     img.img-responsive(alt='photo' src='../../../assets/img/section_about/about_photo.jpg')
                   .about__left-desc
                     .about__font-header Кто я
-                    .about__header-line
-                    .about__left-desc-text
-                      p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
+                    .title-line
+                    .about__left-desc-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
                         |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
+              //.clearfix.hidden-md
               .col-md-6
                 .about__right
                   .about__right-header
                     .about__font-header Чем я могу быть вам полезен
-                    .about__header-line
+                    .title-line
                   .about__right-desc-text
                     p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
                       |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
@@ -79,11 +77,31 @@ html(lang='ru')
                           li.skills__list-item
                             include ../_components/skills
                             span.skills__name HTML5
-        div Lorem ipsum orci malegitsuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
-            | Lorem lectus orci gravida molestie proin metus porta mattis maecenas — proin arcu leo orci proin sit. Congue molestie et nec arcu — nibh eu mauris justo auctor molestie integer arcu congue ultricies sodales in vivamus cursus sodales sem. Mauris — diam nam nec morbi: elementum nam pharetra lorem vulputate sodales quam: amet nam bibendum ut duis proin morbi. Non arcu tellus integer, amet fusce quam mattis ultricies pharetra. Nulla sem quisque mauris fusce tempus arcu orci quisque pellentesque sem mauris diam, non cursus risus porta vulputate malesuada. Donec nec vitae: porttitor bibendum, mauris, leo sem rutrum integer, pellentesque donec cursus urna congue sed enim arcu et leo — vitae odio.
-            |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
+              //.clearfix.hidden-md
+              .col-md-12
+                #map
+                .map__contacts
+                  .map__contacts-title.about__font-header Контакты
+                  .title-line
+                  .about__header-line
+                  .map__contacts-blok
+                    ul.map__contacts-list
+                      li.map__contacts-item.map__contacts-link_sk
+                        .map__contacts-text skype_knd
+                      li.map__contacts-item.map__contacts-link_mail
+                        span.map__contacts-text Anatoliy_kapp@mail.ru
+                    ul.map__contacts-list
+                      li.map__contacts-item.map__contacts-link_phone
+                        span.map__contacts-text 8 968 180 11 26
+                      li.map__contacts-item.map__contacts-link_mark
+                        span.map__contacts-text Ростов-на-Дону, ул.Молодежная, д.7
 
 
+
+
+
+  script(async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkt2KHmSgb2aqFtHySvyCyfvD1Ew4ojNk&callback=initMap" type="text/javascript")
+  script(src="../../../js/about/map.js")
 
 
 
