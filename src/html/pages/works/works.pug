@@ -1,3 +1,61 @@
-//
-   Created by Анатолий on 19.06.2017.
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
+  meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
+  link(href="../../../css/pages/about/about.css" rel="stylesheet")
+  link(href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet")
+  link(href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet")
+  title Обо мне
+doctype html
+html(lang='ru')
+  body
+    wrapper
+      .works
+        container
+        include ../_components/header
+        include ../_components/triangle
+        main
+          .container
+            .row
+              .col-md-12
+                .works__header Мои работы
+                  img.works__header-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars.png' )
+            .row
+              .col-md-12
+                .works__slider
+            .row
+              .col-md-12
+                .works__aboutMy
+                  .works__aboutMy__header Что обо мне говорят
+                    img.works__aboutMy-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars_about_my.png' )
+                  .row
+                     .col-md-4.col-md-offset-2
+                       .works__aboutMy-reviews
+                        img.aboutMy-reviews-photo.img-responsive(alt="photo", src='../../../assets/img/section_works/works_photo_about_my.png' )
+                        .aboutMy-reviews-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa
+                          img.aboutMy-reviews-quotes.img-responsive(alt="quotes", src='../../../assets/img/section_works/works_quotes_about_my.png' )
+                        .aboutMy-reviews-signature
+                          .aboutMy-reviews-signature_name Ковальчук Дмитрий
+                          .aboutMy-reviews-signature_profession - преподаватель
+                     .col-md-4
+                      .works__aboutMy-reviews.reviews__margin-left
+                        img.aboutMy-reviews-photo.img-responsive(alt="photo", src='../../../assets/img/section_works/works_photo_about_my.png' )
+                        .aboutMy-reviews-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa
+                          img.aboutMy-reviews-quotes.img-responsive(alt="quotes", src='../../../assets/img/section_works/works_quotes_about_my.png' )
+                        .aboutMy-reviews-signature
+                          .aboutMy-reviews-signature_name Ковальчук Дмитрий
+                          .aboutMy-reviews-signature_profession - преподаватель
+
+
+
+      include ../_components/footer
+
+
+
+
+
+
+
+
+
 
