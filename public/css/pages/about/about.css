@@ -1,9 +1,11 @@
+/* --------------- header ----------------*/
 .header {
   position: relative;
   background: url("../../../assets/img/header/header_bg.jpg") no-repeat;
   min-height: 650px;
   height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: -1px; }
 
 .header__profile {
   position: absolute;
@@ -84,22 +86,25 @@
   background: url("../../../assets/img/section_triangle/about_bg_left.svg") no-repeat;
   width: 50%;
   height: 110px;
-  margin-top: -110px;
+  margin-top: -109px;
   float: left; }
 
 .section__triangle-bg_right {
   background: url("../../../assets/img/section_triangle/about_bg_right.svg") no-repeat;
   width: 50%;
   height: 110px;
-  margin-top: -110px;
+  margin-top: -109px;
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
   float: right; }
 
+/* --------------- about ----------------*/
+.main {
+  margin-bottom: -185px; }
+
 .about__left {
-  background: #f2f0e8;
-  margin-top: -1px; }
+  background: #f2f0e8; }
 
 .about__left-header {
   position: relative;
@@ -142,8 +147,7 @@
   margin-top: 40px; }
 
 .about__right {
-  background: #f4f5f0;
-  margin-top: -1px; }
+  background: #f4f5f0; }
 
 .about__right-header {
   text-align: center; }
@@ -262,7 +266,6 @@
   width: 50%; }
 
 .footer {
-  margin-top: -185px;
   color: #fff; }
 
 .footer-padding {
@@ -365,3 +368,56 @@
   right: 0;
   margin-right: 28px;
   margin-top: 24px; }
+
+/* --------------- blog ----------------*/
+.blog__sidebar {
+  background: #fbf8f1;
+  padding-top: 100px; }
+
+.blog__sidebar-list {
+  list-style: none; }
+
+.blog__sidebar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 40px;
+  border-right: 3px solid transparent;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 15px 20px 10px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .blog__sidebar-item:hover {
+    border-right: 2px solid #004dd1; }
+
+.blog__sidebar-link {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #556155; }
+  .blog__sidebar-link:hover {
+    text-decoration: none;
+    color: #0b3da0; }
+
+.blog__content {
+  padding-left: 100px;
+  background: #fbf8f1;
+  padding-top: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.blog__article-h1 {
+  margin-top: 0;
+  font-size: 26px; }
+
+.blog__article-h2 {
+  font-size: 18px; }
+
+.blog__content-text {
+  width: 700px;
+  border-bottom: 5px solid #ecece4;
+  margin-bottom: 70px;
+  padding-bottom: 70px; }

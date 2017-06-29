@@ -1,8 +1,5 @@
 
-
-
-//////////header
-
+/* --------------- header ----------------*/
 
 
 .header {
@@ -11,6 +8,7 @@
   min-height:650px;
   height: 100vh;
   background-size: cover;
+  margin-bottom: -1px;
 }
 
 .header__profile{
@@ -123,28 +121,30 @@
   background: url('../../../assets/img/section_triangle/about_bg_left.svg') no-repeat;
   width: 50%;
   height: 110px;
-  margin-top: -110px;
+  margin-top: -109px;
   float: left;
+
 }
 
 .section__triangle-bg_right {
   background: url('../../../assets/img/section_triangle/about_bg_right.svg') no-repeat;
   width: 50%;
   height: 110px;
-  margin-top: -110px;
+  margin-top: -109px;
   transform: scale(-1, 1);
   float: right;
 
 }
 
 
+/* --------------- about ----------------*/
 
-/////////////// about
-
+.main{
+  margin-bottom: -185px;
+}
 
 .about__left{
   background: #f2f0e8;
-  margin-top: -1px;
 }
 
 .about__left-header{
@@ -198,8 +198,6 @@
 
 .about__right{
   background: #f4f5f0;
-  margin-top: -1px;
-  //padding-top: 10px;
 }
 
 .about__right-header{
@@ -356,9 +354,10 @@
 /////////////// footer
 
 .footer{
-  margin-top: -185px;
   color: #fff;
 }
+
+
 
 .footer-padding{
   padding: 0px 30px 0 30px;
@@ -500,3 +499,68 @@
   margin-top: 24px;
 }
 
+
+/* --------------- blog ----------------*/
+
+.blog{
+}
+
+.blog__sidebar{
+  background: #fbf8f1;
+  padding-top: 100px;
+}
+
+.blog__sidebar-list{
+  list-style: none;
+}
+
+.blog__sidebar-item{
+  display: flex;
+  min-height: 40px;
+  border-right: 3px solid transparent;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 15px 20px 10px 20px;
+  box-sizing: border-box;
+    &:hover{
+      border-right: 2px solid #004dd1;
+    }
+}
+
+.blog__sidebar-link{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #556155;
+    &:hover{
+      text-decoration: none;
+      color: #0b3da0;
+    }
+
+}
+
+//////////content
+
+.blog__content{
+  padding-left: 100px;
+  background: #fbf8f1;
+  padding-top: 100px;
+  box-sizing: border-box;
+
+}
+
+.blog__article-h1{
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.blog__article-h2{
+  font-size: 18px;
+}
+
+.blog__content-text{
+  width: 700px;
+  border-bottom: 5px solid #ecece4;
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+}
