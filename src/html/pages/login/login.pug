@@ -1,3 +1,77 @@
-//
-   Created by Анатолий on 19.06.2017.
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
+  meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
+  link(href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet")
+  link(href="../../../css/pages/about/about.css" rel="stylesheet")
+  link(href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet")
+  title Авторизация
+doctype html
+html(lang='ru')
+  body
+    wrapper
+      .works
+        container
+        .row
+          .col-md-12
+            .header
+              .header__profile
+                img.header__photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
+                .header__desc
+                  .header__name Владимир Астахов
+                  .header__info Личный сайт веб-разработчика
+                img.header__stars.img-responsive(alt="stars", src='../../../assets/img/header/header_stars.png' )
+              .header__hamburger
+              include ../_components/social
+              .header__arrow
+          //form(role='form').aboutMy__form
+          //  .row
+          //    .col-md-12
+          //      .aboutMy__form-title
+          //        .about__font-header Связаться
+          //        .title-line
+          //  .row
+          //    .col-md-12
+          //      .form-group
+          //        input#exampleInputPassword1.form-control.aboutMy__form-input_height(type='text', placeholder='Ваше имя')
+          //        input#exampleInputEmail1.form-control.aboutMy__form-input_height(type='email', placeholder='Ваш email')
+          //        textarea.form-control.aboutMy__form-textarea_height(rows="6" placeholder='Ваше сообщение')
+          //  .row
+          //    .aboutMy__form-buttons
+          //      .col-md-6
+          //        button.btn.btn-default(type='submit') Отправить
+          //      .col-md-6
+          //        button.btn.btn-default(type='submit') Очистить
+
+          .row
+            .col-md-4.col-md-offset-4
+              form(role='form').aboutMy__form
+                .row
+                  .col-md-12
+                    .aboutMy__form-title
+                      .about__font-header Связаться
+                      .title-line
+                .row
+                  .col-md-12
+                    .form-group
+                      input#exampleInputPassword1.form-control.aboutMy__form-input_height(type='text', placeholder='Ваше имя')
+                      input#exampleInputEmail1.form-control.aboutMy__form-input_height(type='email', placeholder='Ваш email')
+                      textarea.form-control.aboutMy__form-textarea_height(rows="6" placeholder='Ваше сообщение')
+                .row
+                  .aboutMy__form-buttons
+                    .col-md-6
+                      button.btn.btn-default(type='submit') Отправить
+                    .col-md-6
+                      button.btn.btn-default(type='submit') Очистить
+
+
+
+
+
+
+
+
+
+
+
 

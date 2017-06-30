@@ -742,7 +742,7 @@
   margin-top: 20px;
 }
 
-.btn{
+.aboutMy__form .btn{
   background: rgba(31, 31, 36, 0);
   border: none;
   height: 50px;
@@ -756,7 +756,7 @@
 
 }
 
-.btn-default{
+.aboutMy__form .btn-default{
   color: #98999b;
 }
 
@@ -775,4 +775,125 @@
   transform: rotate(180deg);
   margin-top: 40px;
 
+}
+
+
+/* --------------- welcome ----------------*/
+
+.welcome__bg {
+  position: relative;
+  background: url('../../../assets/img/header/header_bg.jpg') no-repeat;
+  min-height:650px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: -1px;
+}
+
+.button__authorization{
+  position: absolute;
+  background: transparent;
+  border-radius: 0;
+  color: #ffffff;
+  width: 180px;
+  height: 45px;
+  top: 0;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 24px;
+}
+
+
+.welcome__form{
+  width: 380px;
+  background: rgba(31, 31, 36, 0.6);
+  margin-top: 140px;
+}
+
+
+.welcome__form-photo {
+  display: block;
+  border-radius: 50%;
+  width: 142px;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.welcom__desc{
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.welcom__desc_name{
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.welcom__desc_info{
+  font-size: 16px;
+}
+
+
+
+.welcome__form .social {     //social в welcome
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.welcome__form .social__link {
+  color: #0447bc;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #083c96;
+  }
+}
+
+.aboutMy__form-buttons{
+  margin-top: 40px;
+}
+
+.welcome__form .btn{
+  background: rgba(4, 71, 188, 1);
+  border-right: 2px solid #7296d2;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  height: 50px;
+  border-radius: 0;
+  width: 100%;
+    &:hover{
+      background: #083c96;
+      color: #ffffff;
+    }
+}
+
+.button__border{
+  //border-left: none;
+  //margin-left: -1px;
+  ////margin-right: 1px;
+  ////border-left: 2px solid #7296d2;
+  //border-left: 2px solid red;
+  ////border-right: 2px solid red;
+
+}
+
+
+.welcome__form .btn-default{
+  color: #ffffff;
+}
+
+.welcome-text{
+  //position: absolute;
+  top: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: #c6cedb;
+  
 }
