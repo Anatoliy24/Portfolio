@@ -172,7 +172,8 @@
   text-transform: uppercase;
   width: 340px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 20px; }
 
 .title-line {
   display: inline-block;
@@ -481,6 +482,7 @@
   margin-top: -85px; }
 
 .works__aboutMy {
+  position: relative;
   background: url("../../../assets/img/section_works/works_about_my_bg.jpg") no-repeat;
   height: 1350px;
   margin-bottom: -185px; }
@@ -533,3 +535,60 @@
 .aboutMy-reviews-signature {
   color: #ffffff;
   text-align: center; }
+
+.form-group {
+  padding: 0;
+  margin: 0; }
+
+.aboutMy__form {
+  width: 380px;
+  background: rgba(31, 31, 36, 0.6);
+  margin-top: 60px; }
+
+.aboutMy__form-title {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px; }
+
+.aboutMy__form .form-control {
+  background: rgba(126, 123, 127, 0.1);
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+  border: none;
+  margin-top: 20px; }
+
+.aboutMy__form-input_height {
+  height: 50px; }
+
+.aboutMy__form-buttons {
+  margin-top: 20px; }
+
+.btn {
+  background: rgba(31, 31, 36, 0);
+  border: none;
+  height: 50px;
+  border-radius: 0;
+  width: 100%; }
+  .btn:hover {
+    background: #004cd1;
+    color: #ffffff; }
+
+.btn-default {
+  color: #98999b; }
+
+.works__aboutMy-arrow {
+  position: relative; }
+
+.works__aboutMy-arrow-img {
+  position: absolute;
+  background: url("../../../assets/img/section_works/works_arrow_up.svg") no-repeat;
+  width: 30px;
+  height: 16px;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 40px; }
