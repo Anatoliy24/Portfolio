@@ -96,13 +96,6 @@
 }
 
 
-.icon-git{
-
-}
-.icon-link{
-  //margin-left: 17px;
-  //margin-right: 0;
-}
 
 .header__arrow {
   position: absolute;
@@ -790,7 +783,7 @@
   margin-bottom: -1px;
 }
 
-.button__authorization{
+.welcome__button_authorization{
   position: absolute;
   background: transparent;
   border-radius: 0;
@@ -819,19 +812,19 @@
   margin-top: 40px;
 }
 
-.welcom__desc{
+.welcome__desc{
   display: block;
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
 
-.welcom__desc_name{
+.welcome__desc_name{
   font-size: 28px;
   margin-top: 15px;
 }
 
-.welcom__desc_info{
+.welcome__desc_info{
   font-size: 16px;
 }
 
@@ -853,7 +846,7 @@
   }
 }
 
-.aboutMy__form-buttons{
+.welcome__form-buttons{
   margin-top: 40px;
 }
 
@@ -897,3 +890,171 @@
   color: #c6cedb;
   
 }
+
+
+
+/* --------------- login ----------------*/
+
+
+.login__bg {
+  position: relative;
+  background: url('../../../assets/img/header/header_bg.jpg') no-repeat;
+  min-height:650px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: -1px;
+}
+
+
+.login__form{
+  width: 380px;
+  background: rgba(31, 31, 36, 0.6);
+  margin-top: 140px;
+}
+
+
+.login__desc{
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.login__desc_title{
+  font-size: 28px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.login__form .form-control{
+  display: inline-block;
+  background: #ffffff;
+  float: right;
+  max-width: 295px;
+  margin-right: 16px;
+  border-radius: 0;
+  border: none;
+  height: 45px;
+}
+
+.login__form-blockInput{
+  display: inline-block;
+  position: relative;
+  background: #f0efe9;
+  width: 45px;
+  height: 45px;
+  margin-left: 24px;
+    &:first-child{
+      margin-bottom: 20px;
+    }
+}
+
+.blockInput__img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+
+}
+
+.login__form .checkbox{
+  text-align: center;
+  color: #d2d5db;
+  font-size: 16px;
+}
+
+.checkbox__label{
+  line-height: 2;
+  margin-left: 10px;
+}
+
+.checkbox__input{
+  //display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #0548be;
+  color: #ffffff;
+}
+
+.login__form .radio{
+  display: inline-block;
+}
+
+.radiobutton__block{
+  text-align: center;
+}
+
+.text__robot{
+  color: #d2d5db;
+}
+
+.radio__label{
+  //display: inline;
+  //line-height: 2px;
+  color: #d2d5db;
+}
+
+.radio__input{
+  //display: inline;
+  //width: 20px;
+  //height: 20px;
+
+}
+
+
+
+
+
+
+
+.login__form-buttons{
+  margin-top: 40px;
+}
+
+.login__form .btn{
+  background: rgba(4, 71, 188, 1);
+  border-right: 2px solid #7296d2;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  height: 50px;
+  border-radius: 0;
+  width: 100%;
+  &:hover{
+    background: #083c96;
+    color: #ffffff;
+  }
+}
+
+.button__border{
+  //border-left: none;
+  //margin-left: -1px;
+  ////margin-right: 1px;
+  ////border-left: 2px solid #7296d2;
+  //border-left: 2px solid red;
+  ////border-right: 2px solid red;
+
+}
+
+
+.login__form .btn-default{
+  color: #ffffff;
+}
+
+.login-text{
+  //position: absolute;
+  top: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: #c6cedb;
+
+}
+

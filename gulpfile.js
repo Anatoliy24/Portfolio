@@ -97,8 +97,8 @@ gulp.task('browser-sync', function() {
     },
     // startPath: '/html/pages/about/about.html'
     // startPath: '/html/pages/blog/blog.html'
-    // startPath: '/html/pages/login/login.html'
-    startPath: '/html/pages/welcome/welcome.html'
+    startPath: '/html/pages/login/login.html'
+    // startPath: '/html/pages/welcome/welcome.html'
     // startPath: '/html/pages/works/works.html'
   });
 });

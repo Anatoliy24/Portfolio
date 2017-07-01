@@ -15,7 +15,7 @@ html(lang='ru')
         .row
           .col-md-12
             .welcome__bg
-              button.btn.btn-default.button__authorization(type='submit') Авторизоваться
+              button.btn.btn-default.welcome__button_authorization(type='submit') Авторизоваться
               .col-md-4.col-md-offset-4
                 form(role='form').welcome__form
                   .row
@@ -26,14 +26,14 @@ html(lang='ru')
                             img.welcome__form-photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
                         .row
                           .col-md-8.col-md-offset-2
-                            .welcom__desc
-                              .welcom__desc_name Владимир Астахов
-                              .welcom__desc_info Личный сайт веб-разработчика
+                            .welcome__desc
+                              .welcome__desc_name Владимир Астахов
+                              .welcome__desc_info Личный сайт веб-разработчика
                         .row
                           .col-md-12
                             include ../_components/social
                         .row
-                          .aboutMy__form-buttons
+                          .welcome__form-buttons
                             .col-md-5
                               button.btn.btn-default(type='submit') Мои работы
                             .col-md-4
