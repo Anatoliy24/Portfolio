@@ -9,18 +9,20 @@ html(lang='ru')
       .about
         container
         include ../_components/header
+        a.header__arrow(href="#down")
         include ../_components/triangle
+
         main.main
           .container
-            .row
+            .row#down
               .col-md-6
                 .about__left
-                  .about__left-header Обо мне
+                  h1.about__left-header Обо мне
                     img.about__left-img.img-responsive(alt="stars2", src='../../../assets/img/section_about/about_stars.png' )
                   .about__left-photo
                     img.img-responsive(alt='photo' src='../../../assets/img/section_about/about_photo.jpg')
                   .about__left-desc
-                    .about__font-header Кто я
+                    h2.about__font-header Кто я
                     .title-line
                     .about__left-desc-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
                         |Justo gravida tempus: commodo cursus sapien eget, nulla vitae eu lectus odio porta leo massa risus duis tellus, malesuada proin. Integer morbi adipiscing, risus justo lectus mattis vitae cursus sapien sagittis sem risus eget tellus at tellus — arcu lorem rutrum proin amet mattis cursus enim. Tempus curabitur pharetra adipiscing, proin vulputate bibendum elementum duis arcu pharetra, at vitae mauris nibh ipsum eget sit eget auctor congue, in sagittis congue. Sodales adipiscing, congue: amet gravida eros ligula mauris rutrum, sit congue eget risus donec orci duis nec in: adipiscing.
@@ -28,7 +30,7 @@ html(lang='ru')
               .col-md-6
                 .about__right
                   .about__right-header
-                    .about__font-header Чем я могу быть вам полезен
+                    h2.about__font-header Чем я могу быть вам полезен
                     .title-line
                   .about__right-desc-text
                     p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.

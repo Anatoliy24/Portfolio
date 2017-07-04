@@ -9,13 +9,14 @@ html(lang='ru')
       .works
         container
         include ../_components/header
+        a.header__arrow(href="#down")
         include ../_components/triangle
         main
           .container
             .row
               .col-md-12
                 h1.works__header Мои работы
-                  img.works__header-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars.png' )
+                  img#down.works__header-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars.png' )
             .row
               .col-md-12
                 .works__slider
@@ -107,7 +108,7 @@ html(lang='ru')
                               button.btn.btn-default(type='submit') Отправить
                             .col-md-6
                               button.btn.btn-default(type='submit') Очистить
-                  .works__aboutMy-arrow-img
+                  a.works__aboutMy-arrow-img(href="#up")
 
 
       include ../_components/footer
