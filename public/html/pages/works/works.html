@@ -1,12 +1,14 @@
 
 <head>
+	<link href="../../../assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
 	<link href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
 	<link href="../../../css/pages/about/about.css" rel="stylesheet"/>
+	<link href="../../../assets/fonts/font.css" rel="stylesheet"/>
 	<link href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet"/>
-	<title>Обо мне</title>
+	<title>Мои работы</title>
 </head><!DOCTYPE html>
 <html lang="ru">
 	<body>
@@ -52,18 +54,81 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="works__header">Мои работы<img class="works__header-img img-responsive" alt="stars" src="../../../assets/img/section_works/works_stars.png"></div>
+								<h1 class="works__header">Мои работы<img class="works__header-img img-responsive" alt="stars" src="../../../assets/img/section_works/works_stars.png"></h1>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="works__slider"></div>
+								<div class="works__slider">
+									<ul class="works__slider-list">
+										<li class="works__slider-item">
+											<div class="col-md-6">
+												<div class="works__slider-left">
+													<div class="works__slider-img"><img class="img-responsive" alt="page" src="../../../assets/img/section_works/works_slider/slider_page.png"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="works__slider-right">
+													<h3 class="works__slider-title">Сайт школы онлайн образования</h3>
+													<div class="title-line"></div>
+													<div class="works__slider-text">HTML, CSS, JS</div>
+													<form action="https://ya.ru">
+														<button class="btn btn-default" type="submit">
+															<div class="works__slider-buttonImg"><img class="img-responsive" alt="" src="../../../assets/img/section_works/works_slider/icon_button.png"></div>
+															<div class="works__slider-buttonText">Посмотреть сайт</div>
+														</button>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="works__slider-item">
+											<div class="col-md-6">
+												<div class="works__slider-left">
+													<div class="works__slider-img"><img class="img-responsive" alt="page" src="../../../assets/img/section_works/works_slider/slider_page.png"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="works__slider-right">
+													<h3 class="works__slider-title">Сайт школы онлайн образования</h3>
+													<div class="title-line"></div>
+													<div class="works__slider-text">HTML, CSS, JS</div>
+													<form action="https://ya.ru">
+														<button class="btn btn-default" type="submit">
+															<div class="works__slider-buttonImg"><img class="img-responsive" alt="" src="../../../assets/img/section_works/works_slider/icon_button.png"></div>
+															<div class="works__slider-buttonText">Посмотреть сайт</div>
+														</button>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="works__slider-item">
+											<div class="col-md-6">
+												<div class="works__slider-left">
+													<div class="works__slider-img"><img class="img-responsive" alt="page" src="../../../assets/img/section_works/works_slider/slider_page.png"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="works__slider-right">
+													<h2 class="works__slider-title">Сайт школы онлайн образования</h2>
+													<div class="title-line"></div>
+													<div class="works__slider-text">HTML, CSS, JS</div>
+													<form action="https://ya.ru">
+														<button class="btn btn-default" type="submit">
+															<div class="works__slider-buttonImg"><img class="img-responsive" alt="" src="../../../assets/img/section_works/works_slider/icon_button.png"></div>
+															<div class="works__slider-buttonText">Посмотреть сайт</div>
+														</button>
+													</form>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="works__aboutMy">
-									<div class="works__aboutMy__header">Что обо мне говорят<img class="works__aboutMy-img img-responsive" alt="stars" src="../../../assets/img/section_works/works_stars_about_my.png"></div>
+									<h1 class="works__aboutMy__header">Что обо мне говорят<img class="works__aboutMy-img img-responsive" alt="stars" src="../../../assets/img/section_works/works_stars_about_my.png"></h1>
 									<div class="row">
 										<div class="col-md-4 col-md-offset-2">
 											<div class="works__aboutMy-reviews"><img class="aboutMy-reviews-photo img-responsive" alt="photo" src="../../../assets/img/section_works/works_photo_about_my.png">
@@ -90,7 +155,7 @@
 												<div class="row">
 													<div class="col-md-12">
 														<div class="aboutMy__form-title">
-															<div class="about__font-header">Связаться</div>
+															<h2 class="about__font-header">Связаться со мной</h2>
 															<div class="title-line"></div>
 														</div>
 													</div>
@@ -168,5 +233,8 @@
 				</div>
 			</div>
 		</wrapper>
+		<script src="../../../assets/lib/jquery/jquery-3.2.1.slim.min.js"></script>
+		<script src="../../../assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+		<script src="../../../js/works/works.js"></script>
 	</body>
 </html>

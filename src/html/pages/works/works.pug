@@ -1,11 +1,7 @@
 head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-  meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
-  link(href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet")
-  link(href="../../../css/pages/about/about.css" rel="stylesheet")
-  link(href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet")
-  title Обо мне
+  link(href="../../../assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet")
+  include ../_components/head
+  title Мои работы
 doctype html
 html(lang='ru')
   body
@@ -18,15 +14,61 @@ html(lang='ru')
           .container
             .row
               .col-md-12
-                .works__header Мои работы
+                h1.works__header Мои работы
                   img.works__header-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars.png' )
             .row
               .col-md-12
                 .works__slider
+                  ul.works__slider-list
+                    li.works__slider-item
+                      .col-md-6
+                        .works__slider-left
+                          .works__slider-img
+                            img.img-responsive(alt="page", src='../../../assets/img/section_works/works_slider/slider_page.png' )
+                      .col-md-6
+                        .works__slider-right
+                          h3.works__slider-title Сайт школы онлайн образования
+                          .title-line
+                          .works__slider-text HTML, CSS, JS
+                          form(action="https://ya.ru")
+                            button.btn.btn-default(type='submit')
+                              .works__slider-buttonImg
+                                img.img-responsive(alt="", src='../../../assets/img/section_works/works_slider/icon_button.png' )
+                              .works__slider-buttonText Посмотреть сайт
+                    li.works__slider-item
+                      .col-md-6
+                        .works__slider-left
+                          .works__slider-img
+                            img.img-responsive(alt="page", src='../../../assets/img/section_works/works_slider/slider_page.png' )
+                      .col-md-6
+                        .works__slider-right
+                          h3.works__slider-title Сайт школы онлайн образования
+                          .title-line
+                          .works__slider-text HTML, CSS, JS
+                          form(action="https://ya.ru")
+                            button.btn.btn-default(type='submit')
+                              .works__slider-buttonImg
+                                img.img-responsive(alt="", src='../../../assets/img/section_works/works_slider/icon_button.png' )
+                              .works__slider-buttonText Посмотреть сайт
+                    li.works__slider-item
+                      .col-md-6
+                        .works__slider-left
+                          .works__slider-img
+                            img.img-responsive(alt="page", src='../../../assets/img/section_works/works_slider/slider_page.png' )
+                      .col-md-6
+                        .works__slider-right
+                          h2.works__slider-title Сайт школы онлайн образования
+                          .title-line
+                          .works__slider-text HTML, CSS, JS
+                          form(action="https://ya.ru")
+                            button.btn.btn-default(type='submit')
+                              .works__slider-buttonImg
+                                img.img-responsive(alt="", src='../../../assets/img/section_works/works_slider/icon_button.png' )
+                              .works__slider-buttonText Посмотреть сайт
             .row
               .col-md-12
                 .works__aboutMy
-                  .works__aboutMy__header Что обо мне говорят
+                  h1.works__aboutMy__header Что обо мне говорят
                     img.works__aboutMy-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars_about_my.png' )
                   .row
                      .col-md-4.col-md-offset-2
@@ -51,7 +93,7 @@ html(lang='ru')
                         .row
                           .col-md-12
                             .aboutMy__form-title
-                              .about__font-header Связаться
+                              h2.about__font-header Связаться со мной
                               .title-line
                         .row
                           .col-md-12
@@ -70,6 +112,9 @@ html(lang='ru')
 
       include ../_components/footer
 
+    script(src="../../../assets/lib/jquery/jquery-3.2.1.slim.min.js")
+    script(src="../../../assets/lib/jquery.bxslider/jquery.bxslider.min.js")
+    script(src="../../../js/works/works.js")
 
 
 

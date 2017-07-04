@@ -1,11 +1,6 @@
 
 head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-  meta(name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1")
-  link(href="../../../css/pages/about/about.css" rel="stylesheet")
-  link(href="../../../assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet")
-  link(href="../../../assets/lib/font_awesome/css/fontello.css" rel="stylesheet")
+  include ../_components/head
   title Обо мне
 doctype html
 html(lang='ru')
@@ -78,7 +73,7 @@ html(lang='ru')
                           li.skills__list-item
                             include ../_components/skills
                             span.skills__name HTML5
-              .row
+            .row
                 .col-md-12
                   #map
                   .map__contacts_block
@@ -103,27 +98,6 @@ html(lang='ru')
                             .map__contacts-text Ростов-на-Дону, ул.Молодежная, д.7
 
         include ../_components/footer
-
-        .container
-          .row
-            .col-md-12
-              .fullscreen
-                ul.fullscreen-list
-                  li.fullscreen-item
-                    a(href="#").fullscreen-link Мои работы
-                    .fullscreen-line
-                  li.fullscreen-item
-                    a(href="#").fullscreen-link Блог
-                    .fullscreen-line
-                  li.fullscreen-item
-                    a(href="#").fullscreen-link Обо мне
-                    .fullscreen-line
-                  li.fullscreen-item
-                    a(href="#").fullscreen-link Авторизация
-                    .fullscreen-line
-                .fullscreen-cross
-
-
 
 
   script(async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkt2KHmSgb2aqFtHySvyCyfvD1Ew4ojNk&callback=initMap" type="text/javascript")
