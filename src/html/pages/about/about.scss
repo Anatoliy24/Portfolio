@@ -768,7 +768,7 @@ h1, h2, h3, h4{
 
 .fullscreen-list{
   list-style: none;
-  margin-top: 260px;
+  padding-top: 260px;
 }
 
 .fullscreen-item{
@@ -950,8 +950,20 @@ h1, h2, h3, h4{
 
 
 .works__slider-right{
-  margin-top: 256px;
-  margin-left: 100px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-top: 256px;
+      margin-left: 100px;
+      text-align: left;
+    }
 }
 
 .works__slider-title{
@@ -974,6 +986,20 @@ h1, h2, h3, h4{
   height: 45px;
   border: none;
   border-radius: 0;
+  width: 200px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-left: 0;
+      margin-right: 0;
+    }
 
 }
 
@@ -983,7 +1009,6 @@ h1, h2, h3, h4{
   height: 20px;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 15px;
 }
 
 .works__slider-buttonText{
@@ -1000,6 +1025,7 @@ h1, h2, h3, h4{
   background: url('../../../assets/img/section_works/works_about_my_bg.jpg') no-repeat;
   height: 1350px;
   margin-bottom: -185px;
+  padding: 0 20px 0 20px;
 }
 
 
@@ -1082,8 +1108,11 @@ h1, h2, h3, h4{
   position: relative;
   color: #ffffff;
   text-align: left;
-  margin: 20px 0 30px 0;
-
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 380;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutMy-reviews-quotes{
@@ -1111,8 +1140,8 @@ h1, h2, h3, h4{
 
 .aboutMy__form{
   width: 380px;
-  //min-height: 460px;
-  //border:2px solid red ;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(31, 31, 36, 0.6);
   margin-top: 60px;
 }
@@ -1188,6 +1217,7 @@ h1, h2, h3, h4{
   height: 100vh;
   background-size: cover;
   margin-bottom: -1px;
+  padding-top: 220px;
 }
 
 .welcome__button_authorization{
@@ -1207,7 +1237,8 @@ h1, h2, h3, h4{
 .welcome__form{
   width: 380px;
   background: rgba(31, 31, 36, 0.6);
-  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -1311,13 +1342,16 @@ h1, h2, h3, h4{
   height: 100vh;
   background-size: cover;
   margin-bottom: -1px;
+  padding-top: 140px;
 }
 
 
 .login__form{
   width: 380px;
   background: rgba(31, 31, 36, 0.6);
-  margin-top: 140px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 

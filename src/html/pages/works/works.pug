@@ -22,11 +22,7 @@ html(lang='ru')
                 .works__slider
                   ul.works__slider-list
                     li.works__slider-item
-                      .col-md-6
-                        .works__slider-left
-                          .works__slider-img
-                            img.img-responsive(alt="page", src='../../../assets/img/section_works/works_slider/slider_page.png' )
-                      .col-md-6
+                      .col-md-6.col-md-push-6.col-sm-12
                         .works__slider-right
                           h3.works__slider-title Сайт школы онлайн образования
                           .title-line
@@ -36,6 +32,11 @@ html(lang='ru')
                               .works__slider-buttonImg
                                 img.img-responsive(alt="", src='../../../assets/img/section_works/works_slider/icon_button.png' )
                               .works__slider-buttonText Посмотреть сайт
+                      .col-md-6.col-md-pull-6.col-sm-12
+                        .works__slider-left
+                          .works__slider-img
+                            img.img-responsive(alt="page", src='../../../assets/img/section_works/works_slider/slider_page.png' )
+
                     li.works__slider-item
                       .col-md-6
                         .works__slider-left
@@ -72,7 +73,7 @@ html(lang='ru')
                   h1.works__aboutMy__header Что обо мне говорят
                     img.works__aboutMy-img.img-responsive(alt="stars", src='../../../assets/img/section_works/works_stars_about_my.png' )
                   .row
-                     .col-md-4.col-md-offset-2
+                     .col-md-4.col-md-offset-2.col-sm-6
                        .works__aboutMy-reviews
                         img.aboutMy-reviews-photo.img-responsive(alt="photo", src='../../../assets/img/section_works/works_photo_about_my.png' )
                         .aboutMy-reviews-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa
@@ -80,7 +81,7 @@ html(lang='ru')
                         .aboutMy-reviews-signature
                           .aboutMy-reviews-signature_name Ковальчук Дмитрий
                           .aboutMy-reviews-signature_profession - преподаватель
-                     .col-md-4
+                     .col-md-4.col-sm-6
                       .works__aboutMy-reviews.reviews__margin-left
                         img.aboutMy-reviews-photo.img-responsive(alt="photo", src='../../../assets/img/section_works/works_photo_about_my.png' )
                         .aboutMy-reviews-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa
@@ -89,7 +90,7 @@ html(lang='ru')
                           .aboutMy-reviews-signature_name Ковальчук Дмитрий
                           .aboutMy-reviews-signature_profession - преподаватель
                   .row
-                    .col-md-4.col-md-offset-4
+                    .col-md-12
                       form(role='form').aboutMy__form
                         .row
                           .col-md-12
