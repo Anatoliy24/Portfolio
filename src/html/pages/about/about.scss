@@ -9,6 +9,11 @@ h1, h2, h3, h4{
   margin: 0;
 }
 
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+
 /* --------------- header ----------------*/
 
 
@@ -47,7 +52,31 @@ h1, h2, h3, h4{
 }
 
 .header__name{
-  font-size: 35px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 21px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 35px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 35px;
+    }
+}
+
+.header__info{
+  @media (max-width: 767px) {    /* стили для xs-устройств */
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {    /* стили для sm-устройств */
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {    /* стили для md-устройств */
+    font-size: 16px;
+  }
 }
 
 .header__stars{
@@ -77,13 +106,29 @@ h1, h2, h3, h4{
 
 .header__hamburger{
   position: absolute;
-  background: url('../../../assets/img/header/header_hamburger.svg') no-repeat;
-  width: 40px;
-  height: 35px;
   top: 0;
   right: 0;
-  margin-right: 28px;
-  margin-top: 24px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 29px;
+      height: 23px;
+      margin-right: 11px;
+      margin-top: 9px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 40px;
+      height: 35px;
+      margin-right: 28px;
+      margin-top: 24px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 40px;
+      height: 35px;
+      margin-right: 28px;
+      margin-top: 24px;
+
+    }
 }
 
 
@@ -93,8 +138,21 @@ h1, h2, h3, h4{
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 25px;
-  margin: 30px 0 0 30px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 20px;
+      margin: 10px 0 0 10px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 25px;
+      margin: 30px 0 0 30px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 25px;
+      margin: 30px 0 0 30px;
+
+    }
 }
 
 .social__list{
@@ -144,26 +202,43 @@ h1, h2, h3, h4{
   height: 110px;
   margin-top: -109px;
   float: left;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      height: 55px;
+      margin-top: -54px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      height: 110px;
+      margin-top: -109px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      height: 110px;
+      margin-top: -109px;
+    }
 }
 
 .about .section__triangle-bg_right {
-  background: url('../../../assets/img/section_triangle/tr_about_bg_right.svg') no-repeat;
   width: 50%;
-  height: 110px;
-  margin-top: -109px;
   transform: scale(-1, 1);
   float: right;
     @media (max-width: 767px) {    /* стили для xs-устройств */
+      background: url('../../../assets/img/section_triangle/tr_about_bg_left.svg') no-repeat;
+      height: 55px;
+      margin-top: -54px;
 
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
       background: url('../../../assets/img/section_triangle/tr_about_bg_left.svg') no-repeat;
+      height: 110px;
+      margin-top: -109px;
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       background: url('../../../assets/img/section_triangle/tr_about_bg_right.svg') no-repeat;
-
+      height: 110px;
+      margin-top: -109px;
     }
 
 }
@@ -190,18 +265,42 @@ h1, h2, h3, h4{
 .works .section__triangle-bg_left {
   background: url('../../../assets/img/section_triangle/tr_works_bg.svg') no-repeat;
   width: 50%;
-  height: 290px;
-  margin-top: -109px;
   float: left;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      height: 120px;
+      margin-top: -120px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      height: 290px;
+      margin-top: -109px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      height: 290px;
+      margin-top: -109px;
+    }
 }
 
 .works .section__triangle-bg_right {
   background: url('../../../assets/img/section_triangle/tr_works_bg.svg') no-repeat;
   width: 50%;
-  height: 290px;
-  margin-top: -109px;
   transform: scale(-1, 1);
   float: right;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      height: 120px;
+      margin-top: -120px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      height: 290px;
+      margin-top: -109px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      height: 290px;
+      margin-top: -109px;
+    }
 }
 
 
@@ -221,6 +320,17 @@ h1, h2, h3, h4{
   font-size: 63px;
   text-transform: uppercase;
   text-align: center;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 35px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 63px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 63px;
+    }
 }
 
 .about__left-photo{
@@ -229,6 +339,20 @@ h1, h2, h3, h4{
   margin-right: auto;
   width: 442px;
   height: 390px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: auto;
+      height: auto;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 442px;
+      height: 390px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 442px;
+      height: 390px;
+    }
 
 }
 
@@ -240,7 +364,6 @@ h1, h2, h3, h4{
   left: 50%;
   margin-left: -(185/2)+px;
   margin-top: -(125/2)+px;
-
 }
 .about__left-desc{
   text-align: center;
@@ -249,21 +372,23 @@ h1, h2, h3, h4{
 
 .about__font-header{
   display: block;
-  font-size: 35px;
   text-transform: uppercase;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
     @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 21px;
+
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
       width: 320px;
+
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       width: 340px;
+
     }
 }
 
@@ -284,8 +409,21 @@ h1, h2, h3, h4{
 .title-line{
   display: inline-block;
   background:url("../../../assets/img/section_about/about_line.png");
-  width: 89px;
-  height: 3px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 60px;
+      height: 3px;
+
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 89px;
+      height: 3px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 89px;
+      height: 3px;
+    }
 }
 
 .about__left-desc-text{
@@ -295,7 +433,8 @@ h1, h2, h3, h4{
   margin-right: auto;
   line-height: 2;
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -311,17 +450,19 @@ h1, h2, h3, h4{
 
 .about__right{
   background: #f4f5f0;
-  padding-bottom: 40px;
-    @media (max-width: 767px) {    /* стили для xs-устройств */
 
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      padding-top: 30px;
+      padding-bottom: 0;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
-
+      padding-bottom: 40px;
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       padding-left: 40px;
+      padding-bottom: 40px;
     }
 }
 
@@ -332,9 +473,10 @@ h1, h2, h3, h4{
 
 .about__right-desc-text{
   line-height: 2;
-  margin-top: 40px;
-  //text-align: left;
     @media (max-width: 767px) {    /* стили для xs-устройств */
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
 
     }
 
@@ -342,19 +484,23 @@ h1, h2, h3, h4{
       width: 470px;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 40px;
+
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       //width: 534px;
       width: auto;
       font-size: 16px;
+      margin-top: 40px;
+
     }
 
 }
 
 .about__right-skills{
   @media (max-width: 767px) {    /* стили для xs-устройств */
-
+    text-align: center;
   }
 
   @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -388,10 +534,11 @@ h1, h2, h3, h4{
 
 
 .skills__header{
+  display: inline-block;
   font-weight: bold;
   color: #474b57;
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      font-size: 20px;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -405,11 +552,30 @@ h1, h2, h3, h4{
 }
 
 .skills__margin-top{
-  margin-top: 30px;
-    &:first-child{
+  @media (max-width: 767px) { /* стили для xs-устройств */
+    margin-top: 0;
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: 768px) { /* стили для sm-устройств */
+    margin-top: 30px;
+    &:first-child {
       margin-top: 40px;
     }
+  }
+
+  @media (min-width: 992px) { /* стили для md-устройств */
+    margin-top: 30px;
+    &:first-child {
+      margin-top: 40px;
+    }
+  }
+
+
 }
+
 
 .skills__list{
   list-style: none;
@@ -420,10 +586,22 @@ h1, h2, h3, h4{
 .skills__list-item{
   display: inline-block;
   position: relative;
-  //float: left;
-  margin-left: 30px;
     &:first-child{
       margin-left: 0;
+    }
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      margin-bottom: 30px;
+      &:nth-child(even){
+        margin-left: 30px;
+      }
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-left: 30px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-left: 30px;
     }
 }
 
@@ -436,11 +614,6 @@ h1, h2, h3, h4{
   transform: translate(-50%, -50%);
   font-size: 13px;
 }
-
-.skills__header{
-  display: inline-block;
-}
-
 
 
 /////////////// map
@@ -462,35 +635,56 @@ h1, h2, h3, h4{
 .map__contacts{
   position: absolute;
   display: block;
-  background: rgba(255, 255, 255, 0.7);
   text-align: center;
-  top: 50%;
-  left: 50%;
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      background: rgba(255, 255, 255, 1);
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      padding-bottom: 30px;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
+      background: rgba(255, 255, 255, 0.7);
+      top: 50%;
+      left: 50%;
       width: 350px;
       height: 393px;
       margin-left: -(350/2)+px;
       margin-top: -(393/2)+px;
-
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
+      background: rgba(255, 255, 255, 0.7);
+      top: 50%;
+      left: 50%;
       width: 578px;
       height: 283px;
       margin-left: -(578/2)+px;
       margin-top: -(283/2)+px;
-
-
     }
 }
 
 .map__contacts-title{
   margin-top: 29px;
-  margin-bottom: 18px;
+
+  text-transform: uppercase;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 35px;
+      margin-bottom: 18px;
+    }
+
 }
 
 .map__contacts-list{
@@ -499,7 +693,17 @@ h1, h2, h3, h4{
   margin-left: 0;
   padding-left: 0;
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      margin-bottom: 0;
+      &:first-child{
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+      }
+      &:last-child{
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+      }
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -535,7 +739,9 @@ h1, h2, h3, h4{
   display: flex;
 
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      &:first-child {
+        margin: 10px 0 10px 0;
+      }
     }
 
     @media (min-width: 768px) { /* стили для sm-устройств */
@@ -555,8 +761,20 @@ h1, h2, h3, h4{
 
 .map__contacts-img {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 35px;
+      height: 35px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 45px;
+      height: 45px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 45px;
+      height: 45px;
+    }
 }
 
 
@@ -579,7 +797,7 @@ h1, h2, h3, h4{
 .footer-padding{
 
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      padding: 0;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -594,18 +812,18 @@ h1, h2, h3, h4{
 .footer__block-top{
   min-height: 145px;
   background: rgba(60, 62, 71, 0.85);
-  font-size: 16px;
-
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      font-size: 14px;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
       padding-top: 0px;
+      font-size: 14px;
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       padding-top: 20px;
+      font-size: 16px;
     }
 
 }
@@ -613,14 +831,19 @@ h1, h2, h3, h4{
 .footer__left{
 
   @media (max-width: 767px) {    /* стили для xs-устройств */
-
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-bottom: 1px solid #9e9fa3;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: 768px) { /* стили для sm-устройств */
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #9e9fa3;
     padding-bottom: 20px;
   }
 
@@ -637,12 +860,19 @@ h1, h2, h3, h4{
 .footer__center{
 
     @media (max-width: 767px) {    /* стили для xs-устройств */
+      text-align: center;
+      border-bottom: 1px solid #9e9fa3;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
 
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
       border-left: none;
       border-right: none;
+      padding-bottom: 10px;
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
@@ -717,20 +947,46 @@ h1, h2, h3, h4{
 .footer .social__link {
   color: #bfbfbf;
   text-decoration: none;
-  &:hover{
-    text-decoration: none;
-    color: #004cd1;
+
+  @media (max-width: 767px) {    /* стили для xs-устройств */
+    &:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
+
+  @media (min-width: 768px) { /* стили для sm-устройств */
+    &:hover {
+      text-decoration: none;
+      color: #004cd1;
+    }
+
+  }
+
+    @media (min-width: 992px) { /* стили для md-устройств */
+      &:hover {
+        text-decoration: none;
+        color: #004cd1;
+      }
+    }
 }
-
 .footer__right{
-
+  @media (max-width: 767px) {    /* стили для xs-устройств */
+    padding: 10px 0 10px 0;
+  }
+  
+  @media (min-width: 768px) {    /* стили для sm-устройств */
+    padding-bottom: 20px;
+  }
+  
+  @media (min-width: 992px) {    /* стили для md-устройств */
+  }
 }
 
 .footer__right-list{
   list-style: none;
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      text-align: center;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -913,21 +1169,50 @@ h1, h2, h3, h4{
 
 .works__header{
   position: relative;
-  font-size: 63px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -137px;
   color: #ffffff;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 35px;
+      margin-top: -72px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 63px;
+      margin-top: -137px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 63px;
+      margin-top: -137px;
+    }
 }
 
 .works__header-img{
   position: absolute;
-  width: 265px;
-  height: 170px;
   top: 50%;
   left: 50%;
-  margin-left: -(278/2)+px;
-  margin-top:-72px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 137px;
+      height: 88px;
+      margin-left: -(137/2)+px;
+      margin-top:-39px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 265px;
+      height: 170px;
+      margin-left: -(265/2)+px;
+      margin-top:-72px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 265px;
+      height: 170px;
+      margin-left: -(265/2)+px;
+      margin-top:-72px;
+
+    }
 
 }
 
@@ -942,16 +1227,36 @@ h1, h2, h3, h4{
 }
 
 .works__slider-img{
-  width: 510px;
-  height: 651px;
-  margin-top: 100px;
-  margin-left: 90px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 247px;
+      height: 315px;
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 510px;
+      height: 651px;
+      margin-top: 100px;
+      margin-left: 90px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 510px;
+      height: 651px;
+      margin-top: 100px;
+      margin-left: 90px;
+    }
 }
 
 
 .works__slider-right{
     @media (max-width: 767px) {    /* стили для xs-устройств */
-
+      text-align: center;
+      width: 190;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
@@ -967,38 +1272,68 @@ h1, h2, h3, h4{
 }
 
 .works__slider-title{
-  font-size: 35px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 20px;
+      margin-bottom: 15px;
+      margin-top: 35px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
 }
 
 .works__slider-text{
-  font-size: 16px;
   text-transform: uppercase;
   margin-top: 15px;
-  margin-bottom: 60px;
   color: #083c96;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-bottom: 60px;
+      font-size: 16px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-bottom: 60px;
+      font-size: 16px;
+    }
 }
 
 .works__slider-right .btn{
   background: #004cd1;
   display: flex;
-  height: 45px;
   border: none;
   border-radius: 0;
-  width: 200px;
     @media (max-width: 767px) {    /* стили для xs-устройств */
+      height: 40px;
+      width: 185px;
 
     }
 
     @media (min-width: 768px) {    /* стили для sm-устройств */
       margin-left: auto;
       margin-right: auto;
+      height: 45px;
+      width: 200px;
+
     }
 
     @media (min-width: 992px) {    /* стили для md-устройств */
       margin-left: 0;
       margin-right: 0;
+      height: 45px;
+      width: 200px;
     }
 
 }
@@ -1016,7 +1351,17 @@ h1, h2, h3, h4{
   margin-left: 12px;
   margin-right: 18px;
   color: #ffffff;
-  font-size: 16px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      font-size: 16px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      font-size: 16px;
+    }
 
 }
 
@@ -1026,6 +1371,23 @@ h1, h2, h3, h4{
   height: 1350px;
   margin-bottom: -185px;
   padding: 0 20px 0 20px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      height: 1350px;
+      margin-bottom: -185px;
+      padding: 0;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      height: 1350px;
+      margin-bottom: -185px;
+      padding: 0 20px 0 20px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      height: 1350px;
+      margin-bottom: -185px;
+      padding: 0 20px 0 20px;
+    }
 }
 
 
@@ -1068,39 +1430,104 @@ h1, h2, h3, h4{
 
 .works__aboutMy__header{
   position: relative;
-  font-size: 63px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  width: 570px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 70px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 300px;
+      font-size: 35px;
+      padding-top: 34px;
+      margin-bottom: 40px;
+
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 570px;
+      font-size: 63px;
+      padding-top: 70px;
+
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 570px;
+      font-size: 63px;
+      padding-top: 70px;
+    }
 }
 
 .works__aboutMy-img{
   position: absolute;
-  width: 170px;
   top: 50%;
   left: 50%;
-  margin-left: -(170/2)+px;
-  margin-top: -60px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 88px;
+      height: 100px;
+      margin-left: -(88/2)+px;
+      margin-top: -40px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 170px;
+      margin-left: -(170/2)+px;
+      margin-top: -60px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 170px;
+      margin-left: -(170/2)+px;
+      margin-top: -60px;
+    }
 }
 
 .works__aboutMy-reviews{
-  margin-top: 20px;
+  @media (max-width: 767px) {    /* стили для xs-устройств */
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: 768px) {    /* стили для sm-устройств */
+    margin-top: 50px;
+  }
+
+  @media (min-width: 992px) {    /* стили для md-устройств */
+    margin-top: 50px;
+  }
 }
 
 .reviews__margin-left{
-  margin-left: 10px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      margin-left: 0px;
+      margin-top: 35px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-left: 10px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-left: 10px;
+    }
 }
 
 .aboutMy-reviews-photo{
-  width: 80px;
   border-radius: 50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 55px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 80px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      width: 80px;
+    }
 }
 
 
@@ -1108,11 +1535,25 @@ h1, h2, h3, h4{
   position: relative;
   color: #ffffff;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  width: 380;
   margin-left: auto;
   margin-right: auto;
+  line-height: 2;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      margin-top: 20px;
+      width: auto;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 380px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 380px;
+    }
 }
 
 .aboutMy-reviews-quotes{
@@ -1126,6 +1567,7 @@ h1, h2, h3, h4{
 .aboutMy-reviews-signature{
   color: #ffffff;
   text-align: center;
+  line-height: 2;
   
 }
 
@@ -1136,14 +1578,24 @@ h1, h2, h3, h4{
   margin: 0;
 }
 
-
-
 .aboutMy__form{
-  width: 380px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(31, 31, 36, 0.6);
-  margin-top: 60px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      width: 300px;
+      margin-top: 30px;
+
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      width: 380px;
+      margin-top: 60px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+
+    }
 }
 
 .aboutMy__form-title{
@@ -1152,15 +1604,29 @@ h1, h2, h3, h4{
   padding-top: 30px;
 }
 
+.aboutMy__form .title-line{
+  background: #ffffff;
+}
+
 .aboutMy__form .form-control{
   background: rgba(126, 123, 127, 0.1);
-  max-width: 340px;
   margin-left: auto;
   margin-right: auto;
   //border:2px solid red ;
   border-radius: 0;
   border: none;
   margin-top: 20px;
+    @media (max-width: 767px) {    /* стили для xs-устройств */
+      max-width: 260px;
+    }
+
+    @media (min-width: 768px) {    /* стили для sm-устройств */
+      max-width: 340px;
+    }
+
+    @media (min-width: 992px) {    /* стили для md-устройств */
+      max-width: 340px;
+    }
 }
 
 .aboutMy__form-input_height{
