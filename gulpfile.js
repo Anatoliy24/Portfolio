@@ -95,11 +95,11 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: './public/'
     },
-    startPath: '/html/pages/about/about.html'
+    // startPath: '/html/pages/about/about.html'
     // startPath: '/html/pages/blog/blog.html'
     // startPath: '/html/pages/fullscreen/fullscreen.html'
     // startPath: '/html/pages/login/login.html'
-    // startPath: '/html/pages/welcome/welcome.html'
+    startPath: '/html/pages/welcome/welcome.html'
     // startPath: '/html/pages/works/works.html'
   });
 });
