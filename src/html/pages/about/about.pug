@@ -7,15 +7,14 @@ html(lang='ru')
   body
     wrapper
       .about
-        container
+        //.container
         include ../_components/header
         a.header__arrow(href="#down")
         include ../_components/triangle
-
         main.main
           .container
-            .row#down
-              .col-md-6.col-sm-12.col-xs-12
+            .row#down.equal
+              .col-md-6.col-sm-12.col-xs-12.flex-item-left
                 .about__left
                   h1.about__left-header Обо мне
                     img.about__left-img.hidden-xs.img-responsive(alt="stars2", src='../../../assets/img/section_about/about_stars.png' )
@@ -25,8 +24,7 @@ html(lang='ru')
                     h2.about__font-header Кто я
                     .title-line
                     .about__left-desc-text Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
-                .clearfix.hidden-md
-              .col-md-6.col-sm-12.col-xs-12
+              .col-md-6.col-sm-12.col-xs-12.flex-item-right
                 .about__right
                   .about__right-header
                     h2.about__font-header Чем я могу быть вам полезен
@@ -98,9 +96,8 @@ html(lang='ru')
 
         include ../_components/footer
 
-
-  script(async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkt2KHmSgb2aqFtHySvyCyfvD1Ew4ojNk&callback=initMap" type="text/javascript")
   script(src="../../../js/about/map.js")
+  script(async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkt2KHmSgb2aqFtHySvyCyfvD1Ew4ojNk&callback=initMap" type="text/javascript")
 
 
 
