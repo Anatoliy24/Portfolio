@@ -11,42 +11,77 @@ html(lang='ru')
           .col-md-12
             .welcome__bg
               button.btn.btn-default.welcome__button_authorization(type='submit') Авторизоваться
-              .col-md-4.col-md-offset-4.col-xs-12
-                form(role='form').welcome__form
-                  .row
-                    .col-md-12
-                      .welcome__form-content
-                        .row
-                          .col-md-12.col-sm-12.col-xs-12
-                            img.welcome__form-photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
+              .form__container
+                .form__flipper
+                  .col-md-4.col-md-offset-4.col-xs-12
+                    form(role='form').welcome__form
+                      .row
+                        .col-md-12
+                          .welcome__form-content
+                            .row
+                              .col-md-12.col-sm-12.col-xs-12
+                                img.welcome__form-photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
+                            .row
+                              .col-md-12.col-sm-12.col-xs-12
+                                .welcome__desc
+                                  .welcome__desc_name Владимир Астахов
+                                  .welcome__desc_info Личный сайт веб-разработчика
+                            .row
+                              .col-md-12.col-sm-12.col-xs-12
+                                include ../_components/social
+                            .row
+                              .welcome__form-buttons
+                                .col-md-5.col-sm-5.col-xs-5.button__border
+                                  button.btn.btn-default(type='submit') Мои работы
+                                .col-md-4.col-sm-4.col-xs-4.button__border
+                                  button.btn.btn-default(type='submit') Обо мне
+                                .col-md-3.col-sm-3.col-xs-3
+                                  button.btn.btn-default(type='submit') Блог
 
-                          //.col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4
-                            img.welcome__form-photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
-                        .row
-                          //.col-md-8.col-md-offset-2
-                            .welcome__desc
-                              .welcome__desc_name Владимир Астахов
-                              .welcome__desc_info Личный сайт веб-разработчика
-                          .col-md-12.col-sm-12.col-xs-12
-                            .welcome__desc
-                              .welcome__desc_name Владимир Астахов
-                              .welcome__desc_info Личный сайт веб-разработчика
-                        .row
-                          .col-md-12.col-sm-12.col-xs-12
-                            include ../_components/social
-                        .row
-                          .welcome__form-buttons
-                            .col-md-5.col-sm-5.col-xs-5.button__border
-                              button.btn.btn-default(type='submit') Мои работы
-                            .col-md-4.col-sm-4.col-xs-4.button__border
-                              button.btn.btn-default(type='submit') Обо мне
-                            .col-md-3.col-sm-3.col-xs-3
-                              button.btn.btn-default(type='submit') Блог
-              .row
-                .col-md-12.col-sm-12.col-xs-12
-                  .copyright__text &copy; Владимир Астахов | создано в Loftschool | 2017
+                  .col-md-4.col-md-offset-4.col-xs-12
+                    form(role='form').login__form
+                      .row
+                        .col-md-12.col-sm-12.col-xs-12
+                          .login__form-content
+                            .row
+                              .col-md-8.col-md-offset-2
+                                .login__desc
+                                  h1.login__desc_title Авторизуйтесь
+                            .row
+                              .col-md-12
+                                .login__form-blockInput
+                                  img.blockInput__img(src='../../../assets/img/section_login/login_login.png' alt='')
+                                input#InputLogin.form-control(type='text', placeholder='Логин')
+                                .login__form-blockInput
+                                  img.blockInput__img(src='../../../assets/img/section_login/login_password.png' alt='')
+                                input#InputPassword.form-control(type='password', placeholder='Пароль')
+                            .row
+                              .col-md-12
+                                .checkbox__block
+                                  input#check_ishuman.checkbox__input(type="checkbox")
+                                  label(for="check_ishuman").checkbox__label Я человек
+                            .row
+                              .col-md-12
+                                .text__robot Вы точно не робот?
+                                .radiobutton__block
+                                  input.radio__input#radio_ishuman_1(type='radio', name='optionsRadios', value='option1', checked='')
+                                  label.radio__label(for="radio_ishuman_1") Да
+                                  input.radio__input#radio_ishuman_2(type='radio', name='optionsRadios', value='option1', checked='')
+                                  label.radio__label(for="radio_ishuman_2") Не уверен
+                            .row
+                              .login__form-buttons
+                                .col-md-6.col-sm-6.col-xs-7.button__border
+                                  button.btn.btn-default(type='submit') На главную
+                                .col-md-6.col-sm-6.col-xs-5
+                                  button.btn.btn-default(type='submit') Войти
+
+                .row
+                  .col-md-12
+                    .copyright__text &copy; Владимир Астахов | создано в Loftschool | 2017
 
 
+  script(type="text/javascript" src="../../../assets/lib/jquery/jquery-3.2.1.min.js")
+  script(type="text/javascript" src="../../../js/about/about.js")
 
 
 

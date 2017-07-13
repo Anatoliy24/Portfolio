@@ -18,61 +18,112 @@
 					<div class="col-md-12">
 						<div class="welcome__bg">
 							<button class="btn btn-default welcome__button_authorization" type="submit">Авторизоваться</button>
-							<div class="col-md-4 col-md-offset-4 col-xs-12">
-								<form class="welcome__form" role="form">
-									<div class="row">
-										<div class="col-md-12">
-											<div class="welcome__form-content">
-												<div class="row">
-													<div class="col-md-12 col-sm-12 col-xs-12"><img class="welcome__form-photo img-responsive" alt="photo" src="../../../assets/img/header/header_photo.jpg"></div>
-													<!--.col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4img.welcome__form-photo.img-responsive(alt="photo", src='../../../assets/img/header/header_photo.jpg' )
-													-->
-												</div>
-												<div class="row">
-													<!--.col-md-8.col-md-offset-2
-													.welcome__desc
-													  .welcome__desc_name Владимир Астахов
-													  .welcome__desc_info Личный сайт веб-разработчика
-													-->
-													<div class="col-md-12 col-sm-12 col-xs-12">
-														<div class="welcome__desc">
-															<div class="welcome__desc_name">Владимир Астахов</div>
-															<div class="welcome__desc_info">Личный сайт веб-разработчика</div>
+							<div class="form__container">
+								<div class="form__flipper">
+									<div class="col-md-4 col-md-offset-4 col-xs-12">
+										<form class="welcome__form" role="form">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="welcome__form-content">
+														<div class="row">
+															<div class="col-md-12 col-sm-12 col-xs-12"><img class="welcome__form-photo img-responsive" alt="photo" src="../../../assets/img/header/header_photo.jpg"></div>
 														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12 col-sm-12 col-xs-12">
-														<div class="social">
-															<ul class="social__list">
-																<li class="social__item"><a class="social__link icon-vk" href="#"></a></li>
-																<li class="social__item"><a class="social__link icon-git" href="#"></a></li>
-																<li class="social__item"><a class="social__link icon-link" href="#"></a></li>
-															</ul>
+														<div class="row">
+															<div class="col-md-12 col-sm-12 col-xs-12">
+																<div class="welcome__desc">
+																	<div class="welcome__desc_name">Владимир Астахов</div>
+																	<div class="welcome__desc_info">Личный сайт веб-разработчика</div>
+																</div>
+															</div>
 														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="welcome__form-buttons">
-														<div class="col-md-5 col-sm-5 col-xs-5 button__border">
-															<button class="btn btn-default" type="submit">Мои работы</button>
+														<div class="row">
+															<div class="col-md-12 col-sm-12 col-xs-12">
+																<div class="social">
+																	<ul class="social__list">
+																		<li class="social__item"><a class="social__link icon-vk" href="#"></a></li>
+																		<li class="social__item"><a class="social__link icon-git" href="#"></a></li>
+																		<li class="social__item"><a class="social__link icon-link" href="#"></a></li>
+																	</ul>
+																</div>
+															</div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 button__border">
-															<button class="btn btn-default" type="submit">Обо мне</button>
-														</div>
-														<div class="col-md-3 col-sm-3 col-xs-3">
-															<button class="btn btn-default" type="submit">Блог</button>
+														<div class="row">
+															<div class="welcome__form-buttons">
+																<div class="col-md-5 col-sm-5 col-xs-5 button__border">
+																	<button class="btn btn-default" type="submit">Мои работы</button>
+																</div>
+																<div class="col-md-4 col-sm-4 col-xs-4 button__border">
+																	<button class="btn btn-default" type="submit">Обо мне</button>
+																</div>
+																<div class="col-md-3 col-sm-3 col-xs-3">
+																	<button class="btn btn-default" type="submit">Блог</button>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>
+										</form>
 									</div>
-								</form>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="copyright__text">&copy; Владимир Астахов | создано в Loftschool | 2017</div>
+									<div class="col-md-4 col-md-offset-4 col-xs-12">
+										<form class="login__form" role="form">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<div class="login__form-content">
+														<div class="row">
+															<div class="col-md-8 col-md-offset-2">
+																<div class="login__desc">
+																	<h1 class="login__desc_title">Авторизуйтесь</h1>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<div class="login__form-blockInput"><img class="blockInput__img" src="../../../assets/img/section_login/login_login.png" alt=""></div>
+																<input class="form-control" id="InputLogin" type="text" placeholder="Логин">
+																<div class="login__form-blockInput"><img class="blockInput__img" src="../../../assets/img/section_login/login_password.png" alt=""></div>
+																<input class="form-control" id="InputPassword" type="password" placeholder="Пароль">
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<div class="checkbox__block">
+																	<input class="checkbox__input" id="check_ishuman" type="checkbox">
+																	<label class="checkbox__label" for="check_ishuman">Я человек</label>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<div class="text__robot">Вы точно не робот?</div>
+																<div class="radiobutton__block">
+																	<input class="radio__input" id="radio_ishuman_1" type="radio" name="optionsRadios" value="option1" checked="">
+																	<label class="radio__label" for="radio_ishuman_1">Да</label>
+																	<input class="radio__input" id="radio_ishuman_2" type="radio" name="optionsRadios" value="option1" checked="">
+																	<label class="radio__label" for="radio_ishuman_2">Не уверен</label>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="login__form-buttons">
+																<div class="col-md-6 col-sm-6 col-xs-7 button__border">
+																	<button class="btn btn-default" type="submit">На главную</button>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-5">
+																	<button class="btn btn-default" type="submit">Войти</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="copyright__text">&copy; Владимир Астахов | создано в Loftschool | 2017</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -81,4 +132,6 @@
 			</div>
 		</wrapper>
 	</body>
+	<script type="text/javascript" src="../../../assets/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/about/about.js"></script>
 </html>
