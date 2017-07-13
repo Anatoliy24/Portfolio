@@ -8,7 +8,7 @@ html(lang='ru')
     wrapper
       .about
         include ../_components/header
-        a.header__arrow(href="#down")
+        a(href="#down").header__arrow
         include ../_components/triangle
         main.main
           .container
@@ -95,9 +95,10 @@ html(lang='ru')
 
         include ../_components/footer
 
+  script(type="text/javascript" src="../../../assets/lib/jquery/jquery-3.2.1.min.js")
+  script(type="text/javascript" src="../../../js/about/about.js")
   script(src="../../../js/about/map.js")
   script(async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkt2KHmSgb2aqFtHySvyCyfvD1Ew4ojNk&callback=initMap" type="text/javascript")
-
 
 
 

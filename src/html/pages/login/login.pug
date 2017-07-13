@@ -6,7 +6,7 @@ html(lang='ru')
   body
     wrapper
       .container
-        .welcome
+        .login
         .row
           .col-md-12
             .login__bg
@@ -29,25 +29,20 @@ html(lang='ru')
                             input#InputPassword.form-control(type='password', placeholder='Пароль')
                         .row
                           .col-md-12
-                            .checkbox
-                              label.checkbox__label
-                                input.checkbox__input(type="checkbox")
-                                |Я человек
+                            .checkbox__block
+                              input#check_ishuman.checkbox__input(type="checkbox")
+                              label(for="check_ishuman").checkbox__label Я человек
                         .row
-                          .radiobutton__block
-                            .col-md-12
-                              .text__robot Вы точно не робот?
-                              .radio
-                                label.radio__label
-                                  input.radio__input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
-                                  |Да
-                              .radio
-                                label.radio__label
-                                  input.radio__input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
-                                  |Не уверен
+                          .col-md-12
+                            .text__robot Вы точно не робот?
+                            .radiobutton__block
+                              input.radio__input#radio_ishuman_1(type='radio', name='optionsRadios', value='option1', checked='')
+                              label.radio__label(for="radio_ishuman_1") Да
+                              input.radio__input#radio_ishuman_2(type='radio', name='optionsRadios', value='option1', checked='')
+                              label.radio__label(for="radio_ishuman_2") Не уверен
                         .row
                           .login__form-buttons
-                            .col-md-6.col-sm-6.col-xs-7
+                            .col-md-6.col-sm-6.col-xs-7.button__border
                               button.btn.btn-default(type='submit') На главную
                             .col-md-6.col-sm-6.col-xs-5
                               button.btn.btn-default(type='submit') Войти

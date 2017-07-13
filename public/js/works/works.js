@@ -1,1 +1,3 @@
-$(document).ready(function(){$(".works__slider-list").bxSlider()});
+$(document).ready(function(){
+  $('.works__slider-list').bxSlider();
+});

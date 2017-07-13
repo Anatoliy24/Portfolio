@@ -13,7 +13,7 @@
 	<body>
 		<wrapper>
 			<div class="container">
-				<div class="welcome"></div>
+				<div class="login"></div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="login__bg">
@@ -39,33 +39,26 @@
 												</div>
 												<div class="row">
 													<div class="col-md-12">
-														<div class="checkbox">
-															<label class="checkbox__label">
-																<input class="checkbox__input" type="checkbox">Я человек
-															</label>
+														<div class="checkbox__block">
+															<input class="checkbox__input" id="check_ishuman" type="checkbox">
+															<label class="checkbox__label" for="check_ishuman">Я человек</label>
 														</div>
 													</div>
 												</div>
 												<div class="row">
-													<div class="radiobutton__block">
-														<div class="col-md-12">
-															<div class="text__robot">Вы точно не робот?</div>
-															<div class="radio">
-																<label class="radio__label">
-																	<input class="radio__input" id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">Да
-																</label>
-															</div>
-															<div class="radio">
-																<label class="radio__label">
-																	<input class="radio__input" id="optionsRadios2" type="radio" name="optionsRadios" value="option2">Не уверен
-																</label>
-															</div>
+													<div class="col-md-12">
+														<div class="text__robot">Вы точно не робот?</div>
+														<div class="radiobutton__block">
+															<input class="radio__input" id="radio_ishuman_1" type="radio" name="optionsRadios" value="option1" checked="">
+															<label class="radio__label" for="radio_ishuman_1">Да</label>
+															<input class="radio__input" id="radio_ishuman_2" type="radio" name="optionsRadios" value="option1" checked="">
+															<label class="radio__label" for="radio_ishuman_2">Не уверен</label>
 														</div>
 													</div>
 												</div>
 												<div class="row">
 													<div class="login__form-buttons">
-														<div class="col-md-6 col-sm-6 col-xs-7">
+														<div class="col-md-6 col-sm-6 col-xs-7 button__border">
 															<button class="btn btn-default" type="submit">На главную</button>
 														</div>
 														<div class="col-md-6 col-sm-6 col-xs-5">
