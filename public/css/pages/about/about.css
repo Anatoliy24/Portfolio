@@ -1094,8 +1094,7 @@ ul, li {
   text-transform: uppercase; }
 
 .blog__sidebar {
-  background: #fbf8f1;
-  padding-top: 100px; }
+  background: #fbf8f1; }
   @media (max-width: 767px) {
     .blog__sidebar {
       /* стили для xs-устройств */
@@ -1111,7 +1110,12 @@ ul, li {
       display: block; } }
 
 .blog__sidebar-list {
-  list-style: none; }
+  position: absolute; }
+
+.blog__sidebar-fixed {
+  position: fixed;
+  top: 0;
+  width: 300px; }
 
 .blog__sidebar-item {
   display: -webkit-box;
@@ -2034,7 +2038,21 @@ ul, li {
 
 .form__container {
   -webkit-perspective: 1000;
-  perspective: 1000; }
+  perspective: 1000;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .form__container {
+      /* стили для xs-устройств */
+      width: 300px; } }
+  @media (min-width: 768px) {
+    .form__container {
+      /* стили для sm-устройств */
+      width: 380px; } }
+  @media (min-width: 992px) {
+    .form__container {
+      /* стили для md-устройств */
+      width: 380px; } }
 
 .login__form, .welcome__form {
   -webkit-backface-visibility: hidden;
@@ -2057,4 +2075,18 @@ ul, li {
 
 .form__flipper {
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .form__flipper {
+      /* стили для xs-устройств */
+      width: 300px; } }
+  @media (min-width: 768px) {
+    .form__flipper {
+      /* стили для sm-устройств */
+      width: 380px; } }
+  @media (min-width: 992px) {
+    .form__flipper {
+      /* стили для md-устройств */
+      width: 380px; } }

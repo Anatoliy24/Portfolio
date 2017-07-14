@@ -25,7 +25,37 @@ jQuery(document).ready(function ($) {
     $(".login__form").css("transform", "rotateY(0deg)")
   });
 
+// blog scrolling
 
+  function refreshVar() {
+    navPos = $('.blog__sidebar').offset().top;
+    navHeight = $('.blog__sidebar').outerHeight(true);
+  }
+  refreshVar();
+
+  // $(window).resize(refreshVar);
+
+  $('<div class="clone-blog__sidebar"></div>').insertBefore('.blog__sidebar').css('height', navHeight).hide();
+
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+
+    if (winPos >= navPos) {
+      $('.blog__sidebar').addClass('blog__sidebar-fixed');
+      $('.clone-blog__sidebar').show();
+      $('.blog__sidebar').css('padding-top', '0');
+      $('.blog__sidebar-fixed').css('transition', '0.5s');
+
+    }
+    else {
+      $('.blog__sidebar').removeClass('blog__sidebar-fixed');
+      $('.clone-blog__sidebar').hide();
+      $('.blog__sidebar').css('padding-top', '100px');
+      $('.blog__sidebar-fixed').css('transition', '0.5s');
+
+
+    }
+  });
 
 
 
