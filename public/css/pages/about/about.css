@@ -1012,7 +1012,7 @@ ul, li {
 .fullscreen-link {
   display: block;
   color: #ffffff; }
-  .fullscreen-link:hover {
+  .fullscreen-link:hover, .fullscreen-link:active, .fullscreen-link:focus {
     text-decoration: none;
     color: #ffffff; }
 
@@ -1722,7 +1722,18 @@ ul, li {
   border-radius: 0;
   color: #ffffff;
   top: 0;
-  right: 0; }
+  right: 0;
+  outline: none; }
+  .welcome__button_authorization:hover, .welcome__button_authorization:active, .welcome__button_authorization:focus {
+    background: transparent;
+    border-radius: 0;
+    color: #ffffff;
+    border: 1px solid #0447BC; }
+  .welcome__button_authorization:active, .welcome__button_authorization:focus {
+    background: transparent;
+    border-radius: 0;
+    color: #ffffff;
+    border: 1px solid #ffffff; }
   @media (max-width: 767px) {
     .welcome__button_authorization {
       /* стили для xs-устройств */
